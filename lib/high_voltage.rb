@@ -10,6 +10,9 @@ module HighVoltage
   mattr_accessor :fallback_to_index_pages
   @@fallback_to_index_pages = false
 
+  mattr_accessor :no_routes
+  @@no_routes = false
+
   def self.setup
     yield self
   end
